@@ -1,0 +1,42 @@
+.placeHolderPage {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+        margin:  0 auto 1rem auto;
+        font-family: 'Comic Sans MS';
+        background: #FF0000;
+        background: repeating-linear-gradient(to right, #FF0000 0%, #FFA500 14%, #FFFF00 28%, #008000 42%, #0000FF 56%, #4B0082 70%, #EE82EE 100%);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: fit-content;
+        background-repeat: repeat;
+
+        background-size: 400% 400%;
+
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: rainbow;
+        animation-timing-function: linear;
+    }
+
+    @keyframes rainbow {
+        0% {
+            background-position: 0 0
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 700px;
+    }
+}
