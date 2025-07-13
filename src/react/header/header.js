@@ -1,17 +1,34 @@
-import logo from '../../assets/logo.svg';
+import Linkedin from '../../assets/icons/linkedinWhite.svg';
+import Behance from '../../assets/icons/behanceWhite.svg';
 
 function Header() {
     return (
-        <header className="App-header">
-            {/* <img src={logo} className="App-logo" alt="logo" /> */}
-            
-            <nav>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Sobre</a></li>
-                    <li><a>Trabalhos</a></li>
-                </ul>
-            </nav>
+        <header className="header-container">
+            <div className="header-wrapper">
+                <nav className="header-mainMenu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Trabalhos</a></li>
+                    </ul>
+                </nav>
+
+                <nav className="header-socialLinks">
+                    <ul>
+                        <li>
+                            <a href="https://www.behance.net/claraguerreiro" target="_blank" title="Behance de Clara Guerreiro">
+                                <img title="Ícone Behance" alt="Ícone Linkedin" src={Linkedin} />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.behance.net/claraguerreiro" target="_blank" title="Linkedin de Clara Guerreiro">
+                                <img title="Ícone Linkedin" alt="Ícone Behance" src={Behance} />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     );
 }

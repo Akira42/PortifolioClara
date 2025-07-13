@@ -1,0 +1,9 @@
+@import "../scss/mixins.scss";
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    font-family: Korataki, Arial, Helvetica, sans-serif;
+
+    @include container;
+}

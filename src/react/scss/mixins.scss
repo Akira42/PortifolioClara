@@ -1,0 +1,26 @@
+@mixin displayFlexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin displayFlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 992px) {
+    max-width: 95%;
+  }
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

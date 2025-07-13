@@ -1,0 +1,36 @@
+@use "./reset.scss";
+@use "./variables.scss";
+@use "../header/header.scss";
+@use "../footer/footer.scss";
+@use "./mixins.scss";
+@use "./fonts.scss";
+
+/* GENERAL STYLES */
+
+body {
+    font-size: 16px;
+    
+    /* BACKGROUND GRID */
+    background-color: var(--main-black);
+    background-size: 160px 160px;
+    background-image:
+        linear-gradient(to right, var(--main-grey) 4px, transparent 4px),
+        linear-gradient(to bottom, var(--main-grey) 4px, transparent 4px);
+
+    @media screen and (max-width: 992px) {
+        background-size: 80px 80px;
+        background-image:
+            linear-gradient(to right, var(--main-grey) 2px, transparent 2px),
+            linear-gradient(to bottom, var(--main-grey) 2px, transparent 2px);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav>ul {
+    font-family: Korataki, Helvetica, sans-serif;
+}
