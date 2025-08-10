@@ -1,6 +1,6 @@
-import mainBannerBg from '../../../../assets/images/main-banner-bg.png';
-import mainBannerImg from '../../../../assets/images/main-banner-image.png';
-import mainBannerTitle from '../../../../assets/images/main-banner-bem-vindo.png';
+import mainBannerBg from '../../../../../assets/images/main-banner-bg.png';
+import mainBannerImg from '../../../../../assets/images/main-banner-image.png';
+import mainBannerTitle from '../../../../../assets/images/main-banner-bem-vindo.png';
 
 import './mainBanner.scss';
 

@@ -1,4 +1,4 @@
-@import "../../../scss/mixins.scss";
+@import "../../../../scss/mixins.scss";
 
 .mainBanner {
     .mainBanner {
@@ -54,11 +54,38 @@
                                 background: var(--main-yellow);
                                 padding: 1.2rem 2rem;
                                 border-radius: 50px;
+                                transition: .3s;
+                                max-width: calc(315px - 4rem);
+                                width: 100%;
+                            }
+
+                            &.floatingTag:hover {
+                                scale: 1.1;
                             }
 
                             &-1 {
                                 top: 18%;
                                 left: 14%;
+                            }
+
+                            &-2 {
+                                top: 51%;
+                                left: 10%;
+                            }
+
+                            &-3 {
+                                left: 13%;
+                                top: 79%;
+                            }
+
+                            &-4 {
+                                left: 84%;
+                                top: 26%;
+                            }
+
+                            &-5 {
+                                left: 76%;
+                                top: 67%;
                             }
                         }
                     }
