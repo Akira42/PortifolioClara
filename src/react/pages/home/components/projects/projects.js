@@ -26,7 +26,7 @@ function Projects() {
                 <Modal project={project} onClose={() => setShowModal(false)} />
             )}
 
-            <div className="projects">
+            <div className="projects" id="trabalhos">
                 <div className="projects-title mainTitles">
                     <h2>Trabalhos</h2>
                 </div>
