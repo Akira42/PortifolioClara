@@ -1,13 +1,13 @@
 import MainBanner from './components/mainBanner/mainBanner';
 import AboutMe from './components/aboutMe/aboutMe';
-import Place from './components/place/place';
+import Projects from './components/projects/projects';
 
 function Home() {
   return (
     <>
       <MainBanner />
       <AboutMe />
-      <Place />
+      <Projects />
     </>
   );
 }

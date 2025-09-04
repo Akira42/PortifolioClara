@@ -1,5 +1,6 @@
 import mainBannerBg from '../../../../../assets/images/main-banner-bg.png';
 import mainBannerImg from '../../../../../assets/images/main-banner-image.png';
+import mainBannerImgMobile from '../../../../../assets/images/mainbanner-mobile.png'
 import mainBannerTitle from '../../../../../assets/images/main-banner-bem-vindo.png';
 
 import './mainBanner.scss';
@@ -25,6 +26,9 @@ function MainBanner() {
 
                     <img className="mainBanner-centerElement" src={mainBannerImg} alt="Imagem do banner principal" />
                 </div>
+            </div>
+            <div className="mainBanner-content-mobile">
+                <img src={mainBannerImgMobile} alt="Fundo do banner principal" />
             </div>
         </div>
     );

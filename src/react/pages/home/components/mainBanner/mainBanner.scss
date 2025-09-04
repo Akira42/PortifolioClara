@@ -11,6 +11,10 @@
                 width: 100%;
                 transition: .5s;
 
+                @media(max-width: 992px) {
+                    max-width: 100%;
+                }
+
                 &:hover {
                     scale: 1.1
                 }
@@ -18,9 +22,15 @@
         }
 
         &-content {
-            max-width: 1455px;
+            max-width: 75%;
+
+            @media(max-width: 1366px) {
+                max-width: 100%;
+            }
+
             position: relative;
             padding: 9rem 0 9rem 0;
+
 
             >img {
                 max-width: 1455px;
@@ -48,15 +58,21 @@
                         .floatingTag {
                             &.floatingTag {
                                 position: absolute;
-                                font-size: 20px;
+                                font-size: clamp(16px, 1vw, 1.1vw);
+
                                 font-family: 'Korataki';
                                 text-transform: uppercase;
                                 background: var(--main-yellow);
-                                padding: 1.2rem 2rem;
+                                padding: 1rem 1.5rem;
                                 border-radius: 50px;
                                 transition: .3s;
-                                max-width: calc(315px - 4rem);
+                                max-width: calc(350px - 4rem);
                                 width: 100%;
+
+                                @media(max-width: 1366px) {
+                                    padding: 1rem .5rem;
+                                    max-width: calc(310px - 4rem);
+                                }
                             }
 
                             &.floatingTag:hover {
@@ -65,34 +81,46 @@
 
                             &-1 {
                                 top: 18%;
-                                left: 14%;
+                                left: 8%;
                             }
 
                             &-2 {
                                 top: 51%;
-                                left: 10%;
+                                left: 4%;
                             }
 
                             &-3 {
-                                left: 13%;
+                                left: 9%;
                                 top: 79%;
                             }
 
                             &-4 {
-                                left: 84%;
+                                left: 82%;
                                 top: 26%;
+
+                                @media(max-width: 1366px) {
+                                    left: 72%;
+                                }
                             }
 
                             &-5 {
-                                left: 76%;
+                                left: 73%;
                                 top: 67%;
+
+                                @media(max-width: 1366px) {
+                                    left: 68%;
+                                }
                             }
                         }
                     }
 
                     &-centerElement {
-                        max-width: 425px;
+                        max-width: 30%;
                         width: 100%;
+
+                        // @media(max-width: 1366px) {
+                        //     max-width: 300px;
+                        // }
 
                         -webkit-filter: drop-shadow(0 5px 15px 0px #222);
                         filter: drop-shadow(0 5px 15px 0px #222);
@@ -101,6 +129,22 @@
                         animation: float 6s ease-in-out infinite;
                     }
                 }
+            }
+
+            @media(max-width: 992px) {
+                display: none;
+            }
+        }
+
+        &-content-mobile {
+            display: none;
+
+            @media(max-width: 992px) {
+                display: block;
+            }
+
+            img {
+                width: 100%;
             }
         }
     }

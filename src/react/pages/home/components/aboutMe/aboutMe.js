@@ -1,11 +1,12 @@
 import fotoClara from '../../../../../assets/images/elara.png';
+import fotoClaraMob from '../../../../../assets/images/elara-mob.png';
 
 import './aboutMe.scss';
 
 function AboutMe() {
     return (
         <div className="aboutMe">
-            <div className="aboutMe-title">
+            <div className="aboutMe-title mainTitles">
                 <h2>Sobre mim</h2>
             </div>
 
@@ -29,7 +30,9 @@ function AboutMe() {
                 </div>
 
                 <div className="aboutMe-image">
-                    <img src={fotoClara} alt="Clara Guerreiro" />
+                    <img className="aboutMe-imageDesk" src={fotoClara} alt="Clara Guerreiro" />
+
+                    <img className="aboutMe-imageMob" src={fotoClaraMob} alt="Clara Guerreiro" />
                 </div>
             </div>
         </div>

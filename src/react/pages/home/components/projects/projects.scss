@@ -1,0 +1,133 @@
+@import "../../../../scss/mixins.scss";
+
+.projects {
+    position: relative;
+
+    .projects-title {
+        padding: 1rem 0;
+    }
+
+    .projects-container {
+        background-image: url(../../../../../assets/images/projects-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 1rem 0;
+        margin: 2rem auto;
+
+        @media (max-width: 1366px) {
+            background-size: cover;
+        }
+
+        @media(max-width: 992px) {
+            background-image: url(../../../../../assets/images/projects-bg-mob.png);
+        }
+
+        .projects-cardsContainer {
+
+            @media(max-width: 1500px) {
+                max-width: 930px;
+            }
+
+            .projects-cards {
+                display: flex;
+                gap: 45px;
+                justify-content: center;
+
+                @media(max-width: 992px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .projects-cardItem {
+                    .projects-cardItemAction {
+                        transition: .5s;
+
+                        cursor: pointer;
+                        display: block;
+                        position: relative;
+                        width: fit-content;
+                        color: #fff;
+
+                        img {
+                            display: block;
+                            transition: .5s;
+                            width: 100%;
+                        }
+
+                        .projects-cardItemImgMob {
+                            display: none;
+                        }
+
+                        @media(max-width: 992px) {
+                            .projects-cardItemImgDesk {
+                                display: none;
+                            }
+
+                            .projects-cardItemImgMob {
+                                display: block;
+                                width: 95%;
+                                margin: auto;
+                            }
+                        }
+
+                        h3 {
+                            transition: .5s;
+                            font-size: 32px;
+                            font-weight: 600;
+                            line-height: 110%;
+                            font-family: Montserrat;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            text-align: center;
+                            width: 90%;
+
+                            @media (max-width: 992px) {
+                                font-size: 28px;
+        
+                            }
+                        }
+
+                        &:hover {
+                            img {
+                                scale: 1.03;
+                            }
+
+                            h3 {
+                                padding-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .projects-cta {
+                transition: .5s;
+                font-family: Korataki;
+                font-weight: 700;
+                font-size: 28px;
+                color: #000;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                box-shadow: #FD3874 10px 10px 5px;
+                border-radius: 20px;
+                padding: 20px 25px;
+                background-color: rgba(255, 255, 255, 0.5);
+                margin: 2rem auto;
+                display: flex;
+                width: fit-content;
+
+                @media(max-width: 992px) {
+                    display: none;
+                }
+
+                &:hover {
+                    scale: 1.03;
+                }
+            }
+        }
+    }
+}
